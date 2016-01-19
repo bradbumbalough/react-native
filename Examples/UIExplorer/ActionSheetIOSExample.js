@@ -55,6 +55,8 @@ var ActionSheetExample = React.createClass({
 
   showActionSheet() {
     ActionSheetIOS.showActionSheetWithOptions({
+      title: "ActionSheetIOS",
+      message: "More details here",
       options: BUTTONS,
       cancelButtonIndex: CANCEL_INDEX,
       destructiveButtonIndex: DESTRUCTIVE_INDEX,

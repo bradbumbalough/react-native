@@ -17,7 +17,12 @@ var invariant = require('invariant');
 var processColor = require('processColor');
 
 var ActionSheetIOS = {
-  showActionSheetWithOptions(options: Object, callback: Function) {
+  showActionSheetWithOptions(
+    title: String,
+    message: String,
+    options: Object,
+    callback: Function,
+  ) {
     invariant(
       typeof options === 'object' && options !== null,
       'Options must a valid object'
